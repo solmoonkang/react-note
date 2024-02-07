@@ -1,6 +1,6 @@
 import React from "react";
 import Note from "../Presentation/note";
-import EditTage from "../Presentation/editTage";
+import EditTage from "../Presentation/editTag";
 import Archive from "../Presentation/archive";
 import Trash from "../Presentation/trash";
 
