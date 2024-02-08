@@ -9,7 +9,7 @@ export interface Note {
     background: string;
     title: string;
     content: string;
-    data: string;
+    date: string;
     time: number;
     pinned: boolean;
 }
