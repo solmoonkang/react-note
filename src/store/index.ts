@@ -4,6 +4,8 @@ import notesSlice from "./notes/notes.slice";
 import noteStateSlice from "./notes/noteState.slice";
 import tagSlice from "./tags/tag.slice";
 import tagsSlice from "./tags/tags.slice";
+import archiveSlice from "./archive/archive.slice";
+import trashSlice from "./trash/trash.slice";
 
 export const store = configureStore({
     reducer: {
@@ -12,6 +14,8 @@ export const store = configureStore({
         noteStateSlice,
         tagSlice,
         tagsSlice,
+        archiveSlice,
+        trashSlice,
     },
 });
 
