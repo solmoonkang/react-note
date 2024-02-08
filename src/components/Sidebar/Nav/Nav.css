@@ -1,0 +1,11 @@
+.nav {
+    width: 30vw;
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: columns;
+    z-index: 2;
+}
+
+.nav > h2 {
+    padding: 1em;
+}
