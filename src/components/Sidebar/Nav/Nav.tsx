@@ -27,7 +27,7 @@ function Nav() {
                 <NavItem key={tag} value={tag} />
             ))}
 
-            <button className="nav-button">
+            <button className="nav-button" onClick={handleEdit}>
                 <CiPen className="nav-icon" />
                 <p className="nav-title">Edit Notes</p>
             </button>
