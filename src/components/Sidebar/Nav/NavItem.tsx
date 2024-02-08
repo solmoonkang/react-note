@@ -21,13 +21,13 @@ function NavItem({ value }: NavProps) {
     return (
         <button className="nav__item" onClick={() => activeTag(value)}>
             {value === Reserved.NOTES ? (
-                <CiStickyNote />
+                <CiStickyNote className="nav__item-icon" />
             ) : value === Reserved.ARCHIVE ? (
-                <CiInboxIn />
+                <CiInboxIn className="nav__item-icon" />
             ) : value === Reserved.TRASH ? (
-                <CiTrash />
+                <CiTrash className="nav__item-icon" />
             ) : (
-                <CiShoppingTag />
+                <CiShoppingTag className="nav__item-icon" />
             )}
             <p className="nav__item-title">{value}</p>
         </button>
