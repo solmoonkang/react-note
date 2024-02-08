@@ -10,7 +10,7 @@ const initialState: Note = {
     background: "#ffffff",
     title: "",
     content: "",
-    data: dayjs().format("DD/MM/YY h:mm A"),
+    date: dayjs().format("DD/MM/YY h:mm A"),
     time: new Date().getTime(),
     pinned: false
 };
