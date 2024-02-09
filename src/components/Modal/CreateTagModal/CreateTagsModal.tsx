@@ -6,7 +6,8 @@ import { CiCircleRemove } from "react-icons/ci";
 import { closeTagCreateModal } from "../../../store/modal/modal.slice";
 import { createTag } from "../../../store/tags/tags.slice";
 
-import "./CreateTagModal.css";
+import "./CreateTagsModal.css";
+import "../Modal.css";
 
 function CreateTagsModal() {
 
