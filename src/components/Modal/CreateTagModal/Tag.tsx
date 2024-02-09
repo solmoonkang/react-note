@@ -20,7 +20,7 @@ function Tag({ value }: TagProps) {
     return (
         <div className="edit__tag">
             <p>{value}</p>
-            <CiEraser className="edit__tag__delete" onClick={handleDeleteTag} />
+            <CiEraser className="edit__tag__delete" onClick={handleDeleteTag}></CiEraser>
         </div>
     );
 }
