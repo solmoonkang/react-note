@@ -2,7 +2,9 @@ import React, { MouseEvent } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../../../store";
 import { closeTagAddModal } from "../../../store/modal/modal.slice";
+
 import { CiCircleRemove } from "react-icons/ci";
+import "./AddTagModal.css";
 
 interface AddTagModalProps {
     tags: string[];
