@@ -130,7 +130,7 @@ function CreateNoteModal() {
                     </select>
                 </div>
                 <div className="edit__note__priority">
-                    <label htmlFor="priority">우선순위 : </label>
+                    <label htmlFor="priority">우선 순위 : </label>
                     <select
                     value={priority}
                     id="priority"
