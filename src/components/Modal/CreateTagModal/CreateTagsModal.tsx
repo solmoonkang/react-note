@@ -6,6 +6,8 @@ import { CiCircleRemove } from "react-icons/ci";
 import { closeTagCreateModal } from "../../../store/modal/modal.slice";
 import { createTag } from "../../../store/tags/tags.slice";
 
+import "./CreateTagModal.css";
+
 function CreateTagsModal() {
 
     const tags = useSelector((state: RootState) => state.tagsSlice);
