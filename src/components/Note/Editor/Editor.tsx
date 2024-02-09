@@ -7,10 +7,10 @@ import "./Editor.css"
 interface EditorProps {
     background: string;
     content: string;
-    onChnage: (value: string) => void;
+    onChange: (value: string) => void;
 }
 
-function Editor({ background, content, onChnage }: EditorProps) {
+function Editor({ background, content, onChange }: EditorProps) {
 
     const modules = {
         toolbar: {
@@ -25,7 +25,7 @@ function Editor({ background, content, onChnage }: EditorProps) {
 
     return (
         <div className="editor" style={{ backgroundColor: background }}>
-            <ReactQuill modules={modules} onChange={(value) => onChnage(value)} value={content} />
+            <ReactQuill modules={modules} onChange={(value) => onChange(value)} value={content} />
         </div>
     );
 }
