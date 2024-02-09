@@ -1,13 +1,13 @@
 import React from "react";
-
-import { CiPen } from "react-icons/ci";
-
-import "./Nav.css";
 import NavItem from "./NavItem";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../../store";
 import { Reserved } from "../../../type";
 import { openTagCreateModal } from "../../../store/modal/modal.slice";
+
+import { CiPen } from "react-icons/ci";
+import "./Nav.css";
+import "./NavItem.css";
 
 function Nav() {
 
@@ -27,9 +27,9 @@ function Nav() {
                 <NavItem key={tag} value={tag} />
             ))}
 
-            <button className="nav-button" onClick={handleEdit}>
-                <CiPen className="nav-icon" />
-                <p className="nav-title">Edit Notes</p>
+            <button className="nav__item" onClick={handleEdit}>
+                <CiPen className="nav__item-icon" />
+                <p className="nav__item-title">Edit Notes</p>
             </button>
 
             <NavItem key={Reserved.ARCHIVE} value={Reserved.ARCHIVE} />
