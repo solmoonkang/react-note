@@ -6,6 +6,7 @@ import tagSlice from "./tags/tag.slice";
 import tagsSlice from "./tags/tags.slice";
 import archiveSlice from "./archive/archive.slice";
 import trashSlice from "./trash/trash.slice";
+import modalSlice from "./modal/modal.slice";
 
 export const store = configureStore({
     reducer: {
@@ -16,7 +17,8 @@ export const store = configureStore({
         tagsSlice,
         archiveSlice,
         trashSlice,
-    },
+        modalSlice
+    }
 });
 
 export type RootState = ReturnType<typeof store.getState>;
